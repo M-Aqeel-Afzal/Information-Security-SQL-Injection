@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment#04 XSS attack</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="#">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/2.4.1/purify.min.js" integrity="sha512-uHOKtSfJWScGmyyFr2O2+efpDx2nhwHU2v7MVeptzZoiC7bdF6Ny/CmZhN2AwIK1oCFiVQQ5DA/L9FSzyPNu6Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <script src="app.js" defer></script>
+  </head>
+  <body>
+    <section id="user-input">
+      <form>
+        <div class="form-control">
+          <label for="user-message">Your Name</label>
+          <input id="name-message" name="user-message"></input>
+        </div>
+        <div class="form-control">
+          <label for="user-message">Your password</label>
+          <input type="password" id="passward-message" name="user-message"></input>
+        </div>
+        <div class="form-control">
+          <label for="user-message">Your Age</label>
+          <input  id="age-message" name="user-message"></input>
+        </div>
+        <div class="form-control">
+            <label for="message-image">Comment</label>
+          <textarea id="message-image" name="message-image" rows="4" cols="50">
+	        </textarea>
+          <!-- <input type="text" id="message-image" name="message-image" /> -->
+        </div>
+        <button id="submit" type="submit">Send Message</button>
+      </form>
+      <!-- <script type="text/javascript">
+        alert(document.getElementById("name-message"))
+      </script> -->
+    </section>
+    <section id="user-messages">
+      <ul id="unordered">
+
+   </ul>
+    </section>
+  </body>
+</html>
